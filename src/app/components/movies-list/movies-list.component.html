@@ -1,0 +1,7 @@
+<p>movies-list works!</p>
+<ng-container>
+  <app-movie-details *ngFor="let movie of movies" [movie]="movie"></app-movie-details>
+</ng-container>
+
+<app-pagination [currentPage]="currentPage"
+(currentPageChange)="onPageChange($event)"></app-pagination>
